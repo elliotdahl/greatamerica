@@ -1,0 +1,25 @@
+//Typography
+h1, h2 {
+  font-family: 'Cutive Mono', monospace;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  padding:0 32px;
+  h2 {
+    max-width: 600px;
+    margin:0 auto;
+  }
+  p {
+    max-width: 600px;
+    margin:0 auto;
+  }
+}
+h1 {
+  font-size:72px;
+}
+h2 {
+  font-size:40px;
+  line-height: 1;
+}

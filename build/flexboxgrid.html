@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'>
+    <title>8 Gauge Styleguide</title>
+    <!-- /Monoton, Shrikhand, Lato -- Only for fun -->
+    <!-- /Source Sans Pro Font -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i' rel='stylesheet' type='text/css'>
+    <!-- /Raleway -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900' rel='stylesheet'>
+    <!-- /8pt Icon -->
+    <link href='/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'>
+    <link href='/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
+    <link href='/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
+    <link href="/stylesheets/8gauge.css" rel="stylesheet" />
+    <script src="/javascripts/all.js"></script>
+  </head>
+  <body class='flexboxgrid'>
+    <div class='page'>
+      <section class='pvxxl'>
+        <div class='section-content margin-auto txt-c'>
+          <h1>Flex Grid</h1>
+          <p class='sg type-lg'>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </section>
+      <section>
+        <div class='section-content margin-auto txt-c'>
+          <h2 class='mbxl'>The Foundation</h2>
+          <p class='sg type-lg'>The reason why... Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+        <section id='auto-layout'>
+          <div class='section-content margin-auto txt-c'>
+            <h2 class='mbxl'>The Basic Auto Layout</h2>
+            <p class='sg type-lg'>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <div class='grid mvxl'>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+            </div>
+            <div class='grid mvxl'>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+            </div>
+            <div class='grid mvxl'>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id='no-gutter'>
+          <div class='section-content margin-auto txt-c'>
+            <h2 class='mbxl'>No Gutter</h2>
+            <p class='sg type-lg'>
+              Remove the gutter by adding
+              <code>.grid-nogutter</code>
+              to the
+              <code>.grid</code>
+              element.
+            </p>
+            <div class='grid grid-nogutter mvxl'>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id='percent-layout'>
+          <div class='section-content margin-auto txt-c'>
+            <h2 class='mbxl'>Percent Based Layout</h2>
+            <p class='sg type-lg'>The familiar n/24 column based system</p>
+            <div class='grid mvxl'>
+              <div class='col col-16'>
+                <div class='sg-box'>
+                  <code>.col.col-16</code>
+                </div>
+              </div>
+              <div class='col col-4'>
+                <div class='sg-box'>
+                  <code>.col.col-4</code>
+                </div>
+              </div>
+              <div class='col col-4'>
+                <div class='sg-box'>
+                  <code>.col.col-4</code>
+                </div>
+              </div>
+            </div>
+            <div class='grid mvxl'>
+              <div class='col col-12'>
+                <div class='sg-box'>
+                  <code>.col.col-12</code>
+                </div>
+              </div>
+              <div class='col col-4'>
+                <div class='sg-box'>
+                  <code>.col.col-4</code>
+                </div>
+              </div>
+              <div class='col col-8'>
+                <div class='sg-box'>
+                  <code>.col.col-8</code>
+                </div>
+              </div>
+            </div>
+            <div class='grid mvxl'>
+              <div class='col col-4'>
+                <div class='sg-box'>
+                  <code>.col.col-4</code>
+                </div>
+              </div>
+              <div class='col col-9'>
+                <div class='sg-box'>
+                  <code>.col.col-9</code>
+                </div>
+              </div>
+              <div class='col col-7'>
+                <div class='sg-box'>
+                  <code>.col.col-7</code>
+                </div>
+              </div>
+              <div class='col col-4'>
+                <div class='sg-box'>
+                  <code>.col.col-4</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id='flex-grow-layout'>
+          <div class='section-content margin-auto txt-c'>
+            <h2 class='mbxl'>Flex Grow Layout</h2>
+            <p class='sg type-lg'>Based on flex-grow this layout style allows for dynamic content distribution. The flex-grow will attempt to respect it's given ratio until the content of the column exceeds it's parameters. This is the only reason a flex-grow based column will ever drop onto another row.</p>
+            <div class='grid mvxl'>
+              <div class='col col-grow-2'>
+                <div class='sg-box'>
+                  <code>.col.col-grow-2</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+            </div>
+            <div class='grid mvxl'>
+              <div class='col col-grow-3'>
+                <div class='sg-box'>
+                  <code>.col.col-grow-3</code>
+                </div>
+              </div>
+              <div class='col col-grow-2'>
+                <div class='sg-box'>
+                  <code>.col.col-grow-2</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+            </div>
+            <div class='grid mvxl'>
+              <div class='col col-grow-8'>
+                <div class='sg-box'>
+                  <code>.col.col-grow-8</code>
+                </div>
+              </div>
+              <div class='col col-grow-2'>
+                <div class='sg-box'>
+                  <code>.col.col-grow-2</code>
+                </div>
+              </div>
+              <div class='col col-grow-2'>
+                <div class='sg-box'>
+                  <code>.col.col-grow-2</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id='fixed-column-layout'>
+          <div class='section-content margin-auto txt-c'>
+            <h2 class='mbxl'>Fixed Column Layout</h2>
+            <p class='sg type-lg'>Add in the fixed column class and pass the column a defined width or allow content like an image to dictate the desired width. It's recommended to fill the space with dynamic flex columns however you can mix in percent based columns too. Utilizing a fixed column with only percent based columns will make it difficult to reach 100%.</p>
+            <div class='grid mvxl'>
+              <div class='col col-fixed' style='width:240px'>
+                <div class='sg-box'>
+                  <code>.col.col-fixed</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+            </div>
+            <div class='grid mbxl'>
+              <div class='col col-fixed' style='width:240px'>
+                <div class='sg-box-tip'>
+                  Fixed 240px
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box-tip'>
+                  Dynamic Area
+                </div>
+              </div>
+            </div>
+            <div class='grid mvxl'>
+              <div class='col col-fixed' style='width:240px'>
+                <div class='sg-box'>
+                  <code>.col.col-fixed</code>
+                </div>
+              </div>
+              <div class='col col-grow-3'>
+                <div class='sg-box'>
+                  <code>.col.col-grow-3</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+            </div>
+            <div class='grid mbxl'>
+              <div class='col col-fixed' style='width:240px'>
+                <div class='sg-box-tip'>
+                  Fixed 240px
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box-tip'>
+                  Dynamic Area
+                </div>
+              </div>
+            </div>
+            <div class='grid mvxl'>
+              <div class='col col-fixed' style='width:240px'>
+                <div class='sg-box'>
+                  <code>.col.col-fixed</code>
+                </div>
+              </div>
+              <div class='col col-grow-3'>
+                <div class='sg-box'>
+                  <code>.col.col-grow-3</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <code>.col</code>
+                </div>
+              </div>
+              <div class='col col-6'>
+                <div class='sg-box'>
+                  <code>.col.col-6</code>
+                </div>
+              </div>
+            </div>
+            <div class='grid mbxl'>
+              <div class='col col-fixed' style='width:240px'>
+                <div class='sg-box-tip'>
+                  Fixed 240px
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box-tip'>
+                  Dynamic Area
+                </div>
+              </div>
+              <div class='col col-6'>
+                <div class='sg-box-tip'>
+                  25% of Total
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id='content-alignment'>
+          <div class='section-content margin-auto txt-c'>
+            <h2 class='mbxl'>Content Alignments</h2>
+            <p class='sg type-lg'>Donec id elit non mi porta gravida at eget metus.</p>
+            <div class='grid mvxl'>
+              <div class='col col-top'>
+                <div class='sg-box col-top' style='height:80px;'>
+                  <code>.col.col-top</code>
+                </div>
+              </div>
+              <div class='col col-middle'>
+                <div class='sg-box col-middle' style='height:80px;'>
+                  <code>.col.col-middle</code>
+                </div>
+              </div>
+              <div class='col col-bottom'>
+                <div class='sg-box col-bottom' style='height:80px;'>
+                  <code>.col.col-bottom</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id='column-vertical-alignment'>
+          <div class='section-content margin-auto txt-c'>
+            <h2 class='mbxl'>Column Vertical Alignments</h2>
+            <p class='sg type-lg'>Donec id elit non mi porta gravida at eget metus.</p>
+            <div class='grid mvxl'>
+              <div class='col col-align-top'>
+                <div class='sg-box'>
+                  <code>.col.col-align-top</code>
+                </div>
+              </div>
+              <div class='col col-align-middle'>
+                <div class='sg-box'>
+                  <code>.col.col-align-middle</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </div>
+              </div>
+              <div class='col col-align-bottom'>
+                <div class='sg-box'>
+                  <code>.col.col-align-bottom</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id='column-horizontal-alignment'>
+          <div class='section-content margin-auto txt-c'>
+            <h2 class='mbxl'>Column Horizontal Alignments</h2>
+            <p class='sg type-lg'>Donec id elit non mi porta gravida at eget metus.</p>
+            <div class='grid grid-start mvxl'>
+              <div class='col col-12'>
+                <div class='sg-box'>
+                  <code>.grid-start .col.col-12</code>
+                </div>
+              </div>
+            </div>
+            <div class='grid grid-center mvxl'>
+              <div class='col col-12'>
+                <div class='sg-box'>
+                  <code>.grid-center .col.col-12</code>
+                </div>
+              </div>
+            </div>
+            <div class='grid grid-end mvxl'>
+              <div class='col col-12'>
+                <div class='sg-box'>
+                  <code>.grid-end .col.col-12</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class='section-content margin-auto txt-c'>
+            <h2 class='mbxl'>Column Distribution</h2>
+            <p class='sg type-lg'>Donec id elit non mi porta gravida at eget metus.</p>
+            <div class='grid grid-around mvxl'>
+              <div class='col col-fixed' style='width:200px;'>
+                <div class='sg-box'>
+                  <code>.grid-around .col</code>
+                </div>
+              </div>
+              <div class='col col-fixed' style='width:200px;'>
+                <div class='sg-box'>
+                  <code>.grid-around .col</code>
+                </div>
+              </div>
+              <div class='col col-fixed' style='width:200px;'>
+                <div class='sg-box'>
+                  <code>.grid-around .col</code>
+                </div>
+              </div>
+            </div>
+            <div class='grid grid-between mvxl'>
+              <div class='col col-fixed' style='width:200px;'>
+                <div class='sg-box'>
+                  <code>.grid-between .col</code>
+                </div>
+              </div>
+              <div class='col col-fixed' style='width:200px;'>
+                <div class='sg-box'>
+                  <code>.grid-between .col</code>
+                </div>
+              </div>
+              <div class='col col-fixed' style='width:200px;'>
+                <div class='sg-box'>
+                  <code>.grid-between .col</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class='section-content margin-auto txt-c'>
+            <h2 class='mbxl'>Column Ordering</h2>
+            <p class='sg type-lg'>Donec id elit non mi porta gravida at eget metus.</p>
+            <div class='grid mvxl'>
+              <div class='col'>
+                <div class='sg-box'>
+                  <span class='em-high type-md'>1</span>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <span class='em-high type-md'>2</span>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <span class='em-high type-md'>3</span>
+                </div>
+              </div>
+            </div>
+            <div class='grid mvxl'>
+              <div class='col'>
+                <div class='sg-box'>
+                  <span class='em-high type-md'>1</span>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <span class='em-high type-md'>2</span>
+                </div>
+              </div>
+              <div class='col col-first'>
+                <div class='sg-box'>
+                  <span class='em-high type-md'>3</span>
+                  <code>.col-first</code>
+                </div>
+              </div>
+            </div>
+            <div class='grid mvxl'>
+              <div class='col col-last'>
+                <div class='sg-box'>
+                  <span class='em-high type-md'>1</span>
+                  <code>.col-first</code>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <span class='em-high type-md'>2</span>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <span class='em-high type-md'>3</span>
+                </div>
+              </div>
+            </div>
+            <p class='sg type-lg'>
+              Adding
+              <code>.grid-reverse</code>
+              to the
+              <code>.grid</code>
+              reverses the order of the columns.
+            </p>
+            <div class='grid grid-reverse mvxl'>
+              <div class='col'>
+                <div class='sg-box'>
+                  <span class='em-high type-md'>1</span>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <span class='em-high type-md'>2</span>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='sg-box'>
+                  <span class='em-high type-md'>3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class='section-content margin-auto txt-c'>
+            <h2 class='mbxl'>Nested Columns</h2>
+            <p class='sg type-lg'>Donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </section>
+        <section>
+          <div class='section-content margin-auto txt-c'>
+            <h2 class='mbxl'>Media Breaks</h2>
+            <p class='sg type-lg'>Donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>

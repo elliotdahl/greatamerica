@@ -1,0 +1,2231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'>
+    <title>8 Gauge Styleguide</title>
+    <!-- /Monoton, Shrikhand, Lato -- Only for fun -->
+    <!-- /Source Sans Pro Font -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i' rel='stylesheet' type='text/css'>
+    <!-- /Raleway -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900' rel='stylesheet'>
+    <!-- /8pt Icon -->
+    <link href='/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'>
+    <link href='/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
+    <link href='/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
+    <link href="/stylesheets/8gauge.css" rel="stylesheet" />
+    <script src="/javascripts/all.js"></script>
+  </head>
+  <body class='styleguide'>
+    <div class='page'>
+      <div class='margin-auto relative'>
+        <section class='sg-sidenav box-shadow-2'>
+          <div class='section-content margin-auto'>
+            <div class='sg-sidenav-hero txt-c pvxl'>
+              <a class='raleway type-white' href='/'>
+                <h1 class='mbn em-ultra'>8 Gauge</h1>
+              </a>
+            </div>
+            <ul class='list-unstyled paxl type-md'>
+              <li>
+                <a class='hover-underline' href='#get-started'>Get Started</a>
+              </li>
+              <li>
+                <a class='hover-underline' href='#buttons'>Buttons</a>
+              </li>
+              <li>
+                <a class='hover-underline' href='#forms'>Forms</a>
+              </li>
+              <li>
+                <a class='hover-underline' href='#grids'>Grid</a>
+              </li>
+              <li>
+                <a class='hover-underline' href='#lists'>Lists</a>
+              </li>
+              <li>
+                <a class='hover-underline' href='#tables'>Tables</a>
+              </li>
+              <li>
+                <a class='hover-underline' href='#tooltips'>Tooltips</a>
+              </li>
+              <li>
+                <a class='hover-underline' href='#icons'>Icons</a>
+              </li>
+              <li>
+                <a class='hover-underline' href='#loading-spinners'>Spinners</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class='sg-content no-gutter'>
+          <div>
+            <section id='get-started'>
+              <div class='section-content margin-auto paxl mdl-color--white'>
+                <h3>Get Started</h3>
+                <a class='button btn-highlight btn-lg' href='https://github.com/elliotdahl/8-gauge-styleguide-old' target='_blank'>View Repo</a>
+                <p class='mtm mbn'>Version: 0.1</p>
+              </div>
+            </section>
+            <section id='buttons'>
+              <div class='section-content margin-auto paxl mdl-color--white'>
+                <h2 class='section-header'>Buttons</h2>
+                <p>
+                  Four different button colors and their alt variations. The base
+                  <code>button</code>
+                  and
+                  <code>.button</code>
+                  is the default ghost. You can modify it's color with a class.
+                </p>
+                <div class='section-format mbxl'>
+                  <div class='mbxl'>
+                    <button class='btn-default'>
+                      <span>Default</span>
+                    </button>
+                    <button class='btn-default-alt'>Default Alt</button>
+                    <button>Flat</button>
+                  </div>
+                  <div class='mbxl'>
+                    <button class='btn-highlight'>Highlight</button>
+                    <button class='btn-highlight-alt'>Highlight Alt</button>
+                    <button class='btn-highlight-flat'>Flat</button>
+                  </div>
+                  <div class='mbxl'>
+                    <button class='btn-positive'>Positive</button>
+                    <button class='btn-positive-alt'>Positive Alt</button>
+                    <button class='btn-positive-flat'>Flat</button>
+                  </div>
+                  <div>
+                    <button class='btn-negative'>Negative</button>
+                    <button class='btn-negative-alt'>Negative Alt</button>
+                    <button class='btn-negative-flat'>Flat</button>
+                  </div>
+                </div>
+                <h4>Disabled</h4>
+                <div class='section-format mbxl'>
+                  <div class='mbxl'>
+                    <button class='btn-default disabled' disabled=''>Default</button>
+                    <button class='btn-default-alt disabled' disabled=''>Default Alt</button>
+                    <button class='disabled' disabled=''>Flat</button>
+                  </div>
+                  <div class='mbxl'>
+                    <button class='btn-highlight disabled' disabled=''>Highlight</button>
+                    <button class='btn-highlight-alt disabled' disabled=''>Highlight Alt</button>
+                    <button class='btn-highlight-flat disabled' disabled=''>Flat</button>
+                  </div>
+                  <div class='mbxl'>
+                    <button class='btn-positive disabled' disabled=''>Positive</button>
+                    <button class='btn-positive-alt disabled' disabled=''>Positive Alt</button>
+                    <button class='btn-positive-flat disabled' disabled=''>Flat</button>
+                  </div>
+                  <div>
+                    <button class='btn-negative disabled' disabled=''>Negative</button>
+                    <button class='btn-negative-alt disabled' disabled=''>Negative Alt</button>
+                    <button class='btn-negative-flat disabled' disabled=''>Flat</button>
+                  </div>
+                </div>
+                <h4>Icon Buttons</h4>
+                <div class='section-format mbxl'>
+                  <div>
+                    <button class='btn-default'>
+                      <div class='svgicon'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
+                      </div>
+                      <span>
+                        default
+                      </span>
+                    </button>
+                    <button class='btn-default btn-icon'>
+                      <div class='svgicon'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M24 12v6l8-8-8-8v6C15.16 8 8 15.16 8 24c0 3.14.92 6.05 2.48 8.52l2.92-2.92c-.89-1.67-1.4-3.57-1.4-5.6 0-6.63 5.37-12 12-12zm13.52 3.48L34.6 18.4c.89 1.67 1.4 3.57 1.4 5.6 0 6.63-5.37 12-12 12v-6l-8 8 8 8v-6c8.84 0 16-7.16 16-16 0-3.14-.92-6.05-2.48-8.52z"/></svg>
+                      </div>
+                    </button>
+                    <button class='btn-positive btn-icon btn-sm'>
+                      <div class='svgicon'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
+                      </div>
+                    </button>
+                    <button class='btn-default-alt btn-icon'>
+                      <div class='svgicon'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
+                      </div>
+                    </button>
+                    <button class='btn-highlight btn-icon btn-lg'>
+                      <div class='svgicon'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <h4>Button Loaders</h4>
+                <div class='section-format mbxl'>
+                  <div class='mbxl'>
+                    <button class='btn-default'>
+                      <div class='svgicon'>
+                        <svg class="spinner-sm" width="100px" height="100px" viewBox="0 0 101 101" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="ring" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          <circle class="path" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          
+                        </svg>
+                      </div>
+                      <span>
+                        Loading
+                      </span>
+                    </button>
+                    <button class='btn-default-alt'>
+                      <div class='svgicon'>
+                        <svg class="spinner-sm" width="100px" height="100px" viewBox="0 0 101 101" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="ring" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          <circle class="path" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          
+                        </svg>
+                      </div>
+                      Loading
+                    </button>
+                  </div>
+                  <div class='mbxl'>
+                    <button class='btn-highlight'>
+                      <div class='svgicon'>
+                        <svg class="spinner-sm" width="100px" height="100px" viewBox="0 0 101 101" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="ring" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          <circle class="path" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          
+                        </svg>
+                      </div>
+                      Loading
+                    </button>
+                    <button class='btn-highlight-alt'>
+                      <div class='svgicon'>
+                        <svg class="spinner-sm" width="100px" height="100px" viewBox="0 0 101 101" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="ring" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          <circle class="path" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          
+                        </svg>
+                      </div>
+                      Loading
+                    </button>
+                  </div>
+                  <div class='mbxl'>
+                    <button class='btn-positive'>
+                      <div class='svgicon'>
+                        <svg class="spinner-sm" width="100px" height="100px" viewBox="0 0 101 101" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="ring" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          <circle class="path" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          
+                        </svg>
+                      </div>
+                      Loading
+                    </button>
+                    <button class='btn-positive-alt'>
+                      <div class='svgicon'>
+                        <svg class="spinner-sm" width="100px" height="100px" viewBox="0 0 101 101" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="ring" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          <circle class="path" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          
+                        </svg>
+                      </div>
+                      Loading
+                    </button>
+                  </div>
+                  <div>
+                    <button class='btn-negative'>
+                      <div class='svgicon'>
+                        <svg class="spinner-sm" width="100px" height="100px" viewBox="0 0 101 101" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="ring" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          <circle class="path" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          
+                        </svg>
+                      </div>
+                      Loading
+                    </button>
+                    <button class='btn-negative-alt'>
+                      <div class='svgicon'>
+                        <svg class="spinner-sm" width="100px" height="100px" viewBox="0 0 101 101" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="ring" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          <circle class="path" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          
+                        </svg>
+                      </div>
+                      Loading
+                    </button>
+                  </div>
+                </div>
+                <h4>Sizes</h4>
+                <div class='section-format mbxl'>
+                  <div class='mbxl'>
+                    <button class='btn-default btn-sm'>
+                      <div>small</div>
+                    </button>
+                    <button class='btn-default'>default</button>
+                    <button class='btn-default btn-lg'>
+                      <div>large</div>
+                    </button>
+                  </div>
+                  <div class='mbxl'>
+                    <button class='btn-default btn-sm'>
+                      <div class='svgicon'>
+                        <svg class="spinner-sm" width="100px" height="100px" viewBox="0 0 101 101" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="ring" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          <circle class="path" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          
+                        </svg>
+                      </div>
+                      Small Load
+                    </button>
+                    <button class='btn-default'>
+                      <div class='svgicon'>
+                        <svg class="spinner-sm" width="100px" height="100px" viewBox="0 0 101 101" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="ring" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          <circle class="path" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          
+                        </svg>
+                      </div>
+                      Loading
+                    </button>
+                    <button class='btn-default btn-lg'>
+                      <div class='svgicon'>
+                        <svg class="spinner-sm" width="100px" height="100px" viewBox="0 0 101 101" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="ring" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          <circle class="path" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          
+                        </svg>
+                      </div>
+                      Large Load
+                    </button>
+                  </div>
+                  <div>
+                    <button class='btn-default btn-sm'>
+                      <div class='svgicon'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
+                      </div>
+                      <div>small</div>
+                    </button>
+                    <button class='btn-default'>
+                      <div class='svgicon'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
+                      </div>
+                      <div>default</div>
+                    </button>
+                    <button class='btn-default btn-lg'>
+                      <div class='svgicon'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
+                      </div>
+                      <div>large</div>
+                    </button>
+                  </div>
+                </div>
+                <h4>Button Groups</h4>
+                <div class='section-format mbxl'>
+                  <div class='mbxl'>
+                    <div class='btn-group'>
+                      <button class='btn-default-alt'>yes</button><button class='btn-default'>maybe</button><button class='btn-default-alt'>no</button>
+                    </div>
+                  </div>
+                  <div>
+                    <div class='btn-group'>
+                      <button class='btn-default-alt btn-icon'>
+                        <div class='svgicon'>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
+                        </div>
+                      </button><button class='btn-default-alt btn-icon'>
+                        <div class='svgicon'>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"/></svg>
+                        </div>
+                      </button><button class='btn-default-alt btn-icon'>
+                        <div class='svgicon'>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M31 28h-1.59l-.55-.55C30.82 25.18 32 22.23 32 19c0-7.18-5.82-13-13-13S6 11.82 6 19s5.82 13 13 13c3.23 0 6.18-1.18 8.45-3.13l.55.55V31l10 9.98L40.98 38 31 28zm-12 0c-4.97 0-9-4.03-9-9s4.03-9 9-9 9 4.03 9 9-4.03 9-9 9z"/></svg>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <h4>Button Group Flat</h4>
+                <p>Flat Button Group</p>
+                <div class='section-format'>
+                  <div class='mbxl'>
+                    <div class='btn-group-flat'>
+                      <button class='btn-icon'>
+                        <div class='svgicon'>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M30.83 14.83L28 12 16 24l12 12 2.83-2.83L21.66 24z"/></svg>
+                        </div>
+                      </button><button>
+                        3
+                      </button><button>
+                        4
+                      </button><button class='btn-default'>
+                        5
+                      </button><button class='btn-icon'>
+                        <div class='svgicon'>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M20 12l-2.83 2.83L26.34 24l-9.17 9.17L20 36l12-12z"/></svg>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class='mbxl'>
+                    <div class='btn-group-flat'>
+                      <button class='btn-icon'>
+                        <div class='svgicon'>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M30 30H6v4h24v-4zm0-16H6v4h24v-4zM6 26h36v-4H6v4zm0 16h36v-4H6v4zM6 6v4h36V6H6z"/></svg>
+                        </div>
+                      </button>
+                      <button class='btn-icon'>
+                        <div class='svgicon'>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M6 42h36v-4H6v4zm0-8h36v-4H6v4zm0-8h36v-4H6v4zm0-8h36v-4H6v4zM6 6v4h36V6H6z"/></svg>
+                        </div>
+                      </button>
+                      <button class='btn-icon btn-default'>
+                        <div class='svgicon'>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M14 30v4h20v-4H14zM6 42h36v-4H6v4zm0-16h36v-4H6v4zm8-12v4h20v-4H14zM6 6v4h36V6H6z"/></svg>
+                        </div>
+                      </button>
+                      <button class='btn-icon'>
+                        <div class='svgicon'>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M6 42h36v-4H6v4zm12-8h24v-4H18v4zM6 26h36v-4H6v4zm12-8h24v-4H18v4zM6 6v4h36V6H6z"/></svg>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div>
+                    <div class='btn-group-flat'><button>
+                        Yes
+                      </button><button>
+                        Maybe
+                      </button><button class='btn-default'>
+                        Kinda
+                      </button><button>
+                        No
+                      </button></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id='forms'>
+              <div class='section-content margin-auto paxl mdl-color--white'>
+                <h2 class='section-header'>Forms</h2>
+                <div class='section-format mbxl pbl'>
+                  <form>
+                    <div class='form-group'>
+                      <label>Email</label>
+                      <input class='form-control' placeholder='Enter email' type='email'>
+                    </div>
+                    <div class='form-group'>
+                      <label>Password</label>
+                      <input class='form-control' placeholder='Password' type='password'>
+                    </div>
+                    <div class='form-group'>
+                      <button class='btn-default'>Submit</button>
+                    </div>
+                  </form>
+                </div>
+                <h4>Row Form (single column)</h4>
+                <div class='section-format mbxl pbl'>
+                  <div class='form-group left'>
+                    <label>Email</label>
+                    <input class='form-control' placeholder='Email' type='email'>
+                  </div>
+                  <div class='form-group left'>
+                    <label>Password</label>
+                    <input class='form-control' placeholder='Password' type='password'>
+                  </div>
+                  <div class='form-group left'>
+                    <button class='btn-default mtxxxl'>Submit</button>
+                  </div>
+                  <div class='clear'></div>
+                </div>
+                <h4>Inline Single Row</h4>
+                <div class='section-format mbxl pbl'>
+                  <form>
+                    <div class='form-group form-inline'>
+                      <label>Email</label>
+                    </div>
+                    <div class='form-group form-inline'>
+                      <input class='form-control' placeholder='Enter email' type='email'>
+                    </div>
+                    <div class='form-group form-inline'>
+                      <button class='btn-default'>Submit</button>
+                    </div>
+                  </form>
+                </div>
+                <h4>Disabled</h4>
+                <div class='section-format mbxl pbl'>
+                  <form>
+                    <div class='form-group'>
+                      <label>Email</label>
+                      <input class='form-control disabled' disabled='' placeholder='Enter email' type='email'>
+                    </div>
+                    <div class='form-group'>
+                      <button class='btn-default disabled' disabled=''>Submit</button>
+                    </div>
+                  </form>
+                </div>
+                <h4>Large</h4>
+                <div class='section-format mbxl pbl'>
+                  <form>
+                    <div class='form-group form-lg'>
+                      <label>Large</label>
+                      <input class='form-control' placeholder='Larger' type='text'>
+                    </div>
+                    <div class='form-group form-lg'>
+                      <button class='btn-default btn-lg'>Large Btn</button>
+                    </div>
+                  </form>
+                </div>
+                <h4>Select</h4>
+                <div class='section-format mbxl pbl'>
+                  <form>
+                    <div class='form-group form-group-select'>
+                      <select class='form-control'>
+                        <option>Pivotal</option>
+                        <option>Google</option>
+                        <option>Yahoo</option>
+                        <option>Microsoft-Linkedin</option>
+                      </select>
+                      <div class='svgicon'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M24,5,12,17l2.83,2.83L24,10.66l9.17,9.17L36,17Z"/><path d="M33.17,28.17,24,37.34l-9.17-9.17L12,31,24,43,36,31Z"/></svg>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <h4>Dropdown</h4>
+                <div class='section-format mbxl pbl'>
+                  <form>
+                    <div class='form-group form-group-select'>
+                      <div class='dropdown form-control'>
+                        Drop to the down
+                      </div>
+                      <div class='svgicon'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M33.17 17.17L24 26.34l-9.17-9.17L12 20l12 12 12-12z"/></svg>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <h4>Search</h4>
+                <div class='section-format mbxl pbl'>
+                  <form>
+                    <div class='form-group form-group-search'>
+                      <input placeholder='Search...' type='search'>
+                      <div class='svgicon'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M31 28h-1.59l-.55-.55C30.82 25.18 32 22.23 32 19c0-7.18-5.82-13-13-13S6 11.82 6 19s5.82 13 13 13c3.23 0 6.18-1.18 8.45-3.13l.55.55V31l10 9.98L40.98 38 31 28zm-12 0c-4.97 0-9-4.03-9-9s4.03-9 9-9 9 4.03 9 9-4.03 9-9 9z"/></svg>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <h4>Text Area</h4>
+                <div class='section-format mbxl pbl'>
+                  <form>
+                    <div class='form-group'>
+                      <textarea placeholder='Type body here...'></textarea>
+                    </div>
+                  </form>
+                </div>
+                <h4>Radio/Checkbox</h4>
+                <div class='section-format mbxl pbl'>
+                  <form>
+                    <div class='form-group-checkbox'>
+                      <input id='check-me' type='checkbox'>
+                      <label for='check-me'>
+                        Remember Me
+                      </label>
+                    </div>
+                    <div class='form-group'>
+                      <input type='radio'>
+                      Don't Remember me
+                    </div>
+                  </form>
+                </div>
+                <h4>Label Tooltips and Icons</h4>
+                <p>
+                  Place the
+                  <code>.svgicon</code>
+                  into the
+                  <code>label</code>
+                  element next to the text and add
+                  <code>.svg-basline</code>
+                  to adjust the alignment.
+                </p>
+                <div class='section-format mbxl pbl'>
+                  <form>
+                    <div class='form-group form-inline'>
+                      <label>
+                        Snorglebits
+                        <div class='svgicon svg-baseline'>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M22 34h4V22h-4v12zm2-30C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16zm-2-22h4v-4h-4v4z"/></svg>
+                        </div>
+                      </label>
+                      <input class='form-control' placeholder='Snorglebits' type='text'>
+                    </div>
+                    <div class='form-group form-inline'>
+                      <label>
+                        Plogglebits
+                        <div class='svgicon svg-baseline'>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M22 34h4V22h-4v12zm2-30C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16zm-2-22h4v-4h-4v4z"/></svg>
+                        </div>
+                      </label>
+                      <input class='form-control' placeholder='Plogglebits' type='text'>
+                    </div>
+                  </form>
+                </div>
+                <h4>Error/Acceptance States</h4>
+                <p>Click on the red "x" in the error state to clear the form field and rest the error.</p>
+                <div class='section-format mbxl pbl'>
+                  <form>
+                    <div class='form-group form-inline'>
+                      <input class='invalid' placeholder='Enter text' type='text' value='Wrong Answer'>
+                      <div class='svgicon invalid'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"/></svg>
+                      </div>
+                      <div class='invalid-text'>Error please try again</div>
+                    </div>
+                    <div class='form-group form-inline'>
+                      <input class='valid' placeholder='Enter text' type='text' value='Right Answer'>
+                      <div class='svgicon valid'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M24 4C12.95 4 4 12.95 4 24c0 11.04 8.95 20 20 20 11.04 0 20-8.96 20-20 0-11.05-8.96-20-20-20zm-4 30L10 24l2.83-2.83L20 28.34l15.17-15.17L38 16 20 34z"/></svg>
+                      </div>
+                    </div>
+                    <div class='form-group form-inline'>
+                      <input class='loader' placeholder='Enter text' type='text' value='Hold up...'>
+                      <div class='svgicon loading'>
+                        <svg class="spinner-sm" width="100px" height="100px" viewBox="0 0 101 101" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="ring" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          <circle class="path" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          
+                        </svg>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <h4>Simple Forms</h4>
+                <p>Iron out simple use case.</p>
+                <div class='section-format mbxl pbl'>
+                  <form class='simple-form'>
+                    <div class='form-group form-inline'>
+                      <input class='form-control' placeholder='Enter email' type='email'>
+                    </div>
+                    <div class='form-group form-inline'>
+                      <input class='form-control disabled' type='email' value='disabled'>
+                    </div>
+                    <div class='form-group form-inline'>
+                      <input class='invalid' placeholder='Enter text' type='text' value='Wrong Answer'>
+                      <div class='svgicon invalid'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"/></svg>
+                      </div>
+                      <div class='invalid-text'>Error please try again</div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+            <section id='grids'>
+              <div class='section-content margin-auto paxl mdl-color--white'>
+                <h2 class='section-header'>Flexbox Grid</h2>
+                <div class='grid mvxl'>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Column
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Column
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Column
+                    </div>
+                  </div>
+                </div>
+                <h4>No Gutters</h4>
+                <p>
+                  Adding
+                  <code>.grid-nogutters</code>
+                  onto the
+                  <code>.grid</code>
+                  element will remove negative margins and remove internal padding to every
+                  <code>.col</code>
+                  inside of it.
+                </p>
+                <div class='grid grid-nogutter mvxl'>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Column
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Column
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Column
+                    </div>
+                  </div>
+                </div>
+                <h4>Vertical Alignments</h4>
+                <p>
+                  Adding the following modifier classes to the
+                  <code>.col</code>
+                  will allow you to change vertical alignment of the column itself
+                </p>
+                <div class='grid mvxl'>
+                  <div class='col col-align-top'>
+                    <div class='sg-box'>
+                      <code>.col-align-top</code>
+                    </div>
+                  </div>
+                  <div class='col col-align-middle'>
+                    <div class='sg-box'>
+                      <code>.col-align-middle</code>
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet.
+                    </div>
+                  </div>
+                  <div class='col col-align-bottom'>
+                    <div class='sg-box'>
+                      <code>.col-align-bottom</code>
+                    </div>
+                  </div>
+                </div>
+                <h4>Horizontal Alignments</h4>
+                <p>
+                  Adding the following modifiers to change influence where columns will collect inside of the grid.
+                </p>
+                <div class='grid grid-start'>
+                  <div class='col col-12'>
+                    <div class='sg-box'>
+                      <code>.grid-start .col</code>
+                    </div>
+                  </div>
+                </div>
+                <div class='grid grid-center'>
+                  <div class='col col-12'>
+                    <div class='sg-box'>
+                      <code>.grid-center .col</code>
+                    </div>
+                  </div>
+                </div>
+                <div class='grid grid-end'>
+                  <div class='col col-12'>
+                    <div class='sg-box'>
+                      <code>.grid-end .col</code>
+                    </div>
+                  </div>
+                </div>
+                <h4>Distribution</h4>
+                <p>
+                  Adding the following modifiers to the
+                  <code>.grid</code>
+                  will change the distribution of defined width columns.
+                </p>
+                <div class='grid grid-around'>
+                  <div class='col col-5'>
+                    <div class='sg-box'>
+                      <code>.grid-around .col.col-5</code>
+                    </div>
+                  </div>
+                  <div class='col col-5'>
+                    <div class='sg-box'>
+                      <code>.grid-around .col.col-5</code>
+                    </div>
+                  </div>
+                  <div class='col col-5'>
+                    <div class='sg-box'>
+                      <code>.grid-around .col.col-5</code>
+                    </div>
+                  </div>
+                </div>
+                <div class='grid grid-between'>
+                  <div class='col col-5'>
+                    <div class='sg-box'>
+                      <code>.grid-between .col.col-5</code>
+                    </div>
+                  </div>
+                  <div class='col col-5'>
+                    <div class='sg-box'>
+                      <code>.grid-between .col.col-5</code>
+                    </div>
+                  </div>
+                  <div class='col col-5'>
+                    <div class='sg-box'>
+                      <code>.grid-between .col.col-5</code>
+                    </div>
+                  </div>
+                </div>
+                <h4>Ordering</h4>
+                <p>
+                  Adding
+                  <code>.col-first</code>
+                  or
+                  <code>.col-last</code>
+                  to a
+                  <code>.col</code>
+                  will reorder the selected column.
+                  Modifying
+                  <code>.grid.grid-reverse</code>
+                  will reverse the order of the columns inside of the grid.
+                </p>
+                <div class='grid'>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      1
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      2
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      3
+                    </div>
+                  </div>
+                  <div class='col col-first'>
+                    <div class='sg-box'>
+                      4
+                      <code>.col-first</code>
+                    </div>
+                  </div>
+                </div>
+                <div class='grid'>
+                  <div class='col col-last'>
+                    <div class='sg-box'>
+                      1
+                      <code>.col-last</code>
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      2
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      3
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      4
+                    </div>
+                  </div>
+                </div>
+                <div class='grid grid-reverse'>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      1
+                      <code>.grid-reverse .col</code>
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      2
+                      <code>.grid-reverse .col</code>
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      3
+                      <code>.grid-reverse .col</code>
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      4
+                      <code>.grid-reverse .col</code>
+                    </div>
+                  </div>
+                </div>
+                <h4>Percent Based Column Widths</h4>
+                <p>
+                  Adding a column number modifier class to the column like
+                  <code>.col.col-4</code>
+                  to get the percentage of 4/24 columns. Additional columns without modifier classes will be auto scaled.
+                </p>
+                <div class='grid mvxl'>
+                  <div class='col col-12'>
+                    <div class='sg-box'>
+                      50% with
+                      <code>.col-12</code>
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Auto
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Auto
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Auto
+                    </div>
+                  </div>
+                </div>
+                <div class='grid mvxl'>
+                  <div class='col col-4'>
+                    <div class='sg-box'>
+                      <code>.col-4</code>
+                    </div>
+                  </div>
+                  <div class='col col-4'>
+                    <div class='sg-box'>
+                      <code>.col-4</code>
+                    </div>
+                  </div>
+                  <div class='col col-8'>
+                    <div class='sg-box'>
+                      <code>.col-8</code>
+                    </div>
+                  </div>
+                  <div class='col col-4'>
+                    <div class='sg-box'>
+                      <code>.col-4</code>
+                    </div>
+                  </div>
+                  <div class='col col-4'>
+                    <div class='sg-box'>
+                      <code>.col-4</code>
+                    </div>
+                  </div>
+                </div>
+                <h4>Fixed Width Columns</h4>
+                <p>
+                  Adding
+                  <code>.col-fixed</code>
+                  to your
+                  <code>.col</code>
+                  will allow you to style a fixed width. When used with % based width columns they will still derive their width from the total grid width.
+                </p>
+                <div class='grid mvxl'>
+                  <div class='col col-fixed' style='width:175px;'>
+                    <div class='sg-box'>
+                      Fixed 175px
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Auto
+                    </div>
+                  </div>
+                  <div class='col col-12'>
+                    <div class='sg-box'>
+                      <code>.col-12</code>
+                    </div>
+                  </div>
+                </div>
+                <h4>Offset Columns</h4>
+                <p>
+                  Adding a column number offset modifier class to the column like
+                  <code>.col.col-offset-4</code>
+                  to get the percentage of 4/24 column offset.
+                </p>
+                <div class='grid mvxl'>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Auto
+                    </div>
+                  </div>
+                  <div class='col col-offset-4'>
+                    <div class='sg-box'>
+                      Auto + Offset 4 columns to left
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Auto
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Auto
+                    </div>
+                  </div>
+                </div>
+                <h4>Nested Columns</h4>
+                <p>
+                  Nested columns shown below have objects inside of them that have their own paddings. If you need to adjust columns you can use
+                  <code>.grid-nogutter</code>
+                  or whitespacing classes.
+                </p>
+                <div class='grid mvxl'>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Auto
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box pan'>
+                      <div class='grid mbn'>
+                        <div class='col'>
+                          <div class='sg-box bg-dark-8'>
+                            Child Col
+                          </div>
+                        </div>
+                        <div class='col'>
+                          <div class='sg-box bg-dark-8'>
+                            Child Col
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h4>Multi Media Break Columns</h4>
+                <p>Mix all the cols</p>
+                <div class='grid grid-lg grid-md mvxl'>
+                  <div class='col col-md'>
+                    <div class='sg-box'>
+                      <code>.col-md</code>
+                    </div>
+                  </div>
+                  <div class='col col-md'>
+                    <div class='sg-box'>
+                      <code>.col-md</code>
+                    </div>
+                  </div>
+                  <div class='col col-md col-lg'>
+                    <div class='sg-box'>
+                      <code>.col-md.col-lg</code>
+                    </div>
+                  </div>
+                  <div class='col col-md col-lg'>
+                    <div class='sg-box'>
+                      <code>.col-md.col-lg</code>
+                    </div>
+                  </div>
+                </div>
+                <p>Nest columns to get different break points</p>
+                <div class='grid mvxl'>
+                  <div class='col col-lg'>
+                    <div class='sg-box'>
+                      <code>.col-lg</code>
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box phn'>
+                      <code>.col-lg</code>
+                      <div class='grid mbn'>
+                        <div class='col'>
+                          <div class='sg-box bg-dark-8'>
+                            Child Col
+                          </div>
+                        </div>
+                        <div class='col'>
+                          <div class='sg-box bg-dark-8'>
+                            Child Col
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h4>Small Media Break</h4>
+                <p>
+                  Add the small grid break modifier class
+                  <code>.grid.grid-sm</code>
+                  and add the column modifier class to the desired columns
+                  <code>.col.col-sm</code>
+                </p>
+                <div class='grid grid-sm mvxl'>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Column
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Column
+                    </div>
+                  </div>
+                  <div class='col col-sm'>
+                    <div class='sg-box'>
+                      <code>.col-sm</code>
+                    </div>
+                  </div>
+                  <div class='col col-sm'>
+                    <div class='sg-box'>
+                      <code>.col-sm</code>
+                    </div>
+                  </div>
+                </div>
+                <h4>Medium Media Break</h4>
+                <p>
+                  Add the medium grid break modifier class
+                  <code>.grid.grid-md</code>
+                  and add the column modifier class to the desired columns
+                  <code>.col.col-md</code>
+                </p>
+                <div class='grid grid-md mvxl'>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Column
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Column
+                    </div>
+                  </div>
+                  <div class='col col-md'>
+                    <div class='sg-box'>
+                      <code>.col-md</code>
+                    </div>
+                  </div>
+                  <div class='col col-md'>
+                    <div class='sg-box'>
+                      <code>.col-md</code>
+                    </div>
+                  </div>
+                </div>
+                <h4>Large Media Break</h4>
+                <p>
+                  Add the large grid break modifier class
+                  <code>.grid.grid-lg</code>
+                  and add the column modifier class to the desired columns
+                  <code>.col.col-lg</code>
+                </p>
+                <div class='grid grid-lg mvxl'>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Column
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Column
+                    </div>
+                  </div>
+                  <div class='col col-lg'>
+                    <div class='sg-box'>
+                      <code>.col-lg</code>
+                    </div>
+                  </div>
+                  <div class='col col-lg'>
+                    <div class='sg-box'>
+                      <code>.col-lg</code>
+                    </div>
+                  </div>
+                </div>
+                <h4>Sandbox</h4>
+                <div class='grid mvxl'>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      C
+                    </div>
+                  </div>
+                  <div class='col col-22'>
+                    <div class='sg-box'>
+                      22
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      C
+                    </div>
+                  </div>
+                </div>
+                <div class='grid mvxl'>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Column
+                    </div>
+                  </div>
+                  <div class='col col-24'>
+                    <div class='sg-box'>
+                      Column
+                    </div>
+                  </div>
+                  <div class='col'>
+                    <div class='sg-box'>
+                      Column
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id='lists'>
+              <div class='section-content margin-auto paxl mdl-color--white'>
+                <h2 class='section-header'>Lists</h2>
+                <p>
+                  Lists are an antiquated and broken HTML component. These are an exploration of a scalable and fully customizable list format. The dot and the number are both handled by an
+                  <code>:after</code>
+                  psuedo selector. As long as the lists have text with a line-height of 24px it will look good.
+                </p>
+                <h4>UL</h4>
+                <div class='section-format mbxl pbl'>
+                  <ul>
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                    <ul>
+                      <li>Secondary List Item 1</li>
+                      <li>Secondary List Item 2</li>
+                      <li>Secondary List Item 3</li>
+                    </ul>
+                  </ul>
+                </div>
+                <h4>OL</h4>
+                <div class='section-format mbxl pbl'>
+                  <ol>
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                    <ol>
+                      <li>Secondary List Item 1</li>
+                      <li>Secondary List Item 2</li>
+                      <li>Secondary List Item 3</li>
+                    </ol>
+                  </ol>
+                </div>
+                <h4>Unstyled List</h4>
+                <p>
+                  Adding class
+                  <code>list-unstyled</code>
+                  to the
+                  <code>ul</code>
+                  will remove list styles but keep expected vertical paddings.
+                </p>
+                <div class='section-format mbxl pbl'>
+                  <ul class='list-unstyled'>
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                  </ul>
+                </div>
+                <h4>Inline Lists</h4>
+                <p>
+                  Adding class
+                  <code>list-inline</code>
+                  to the
+                  <code>ul</code>
+                  will remove list styles, irrelevant spacings and make all
+                  <code>li</code>
+                  elements inline-block.
+                </p>
+                <div class='section-format mbxl'>
+                  <ul class='list-inline'>
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section id='tables'>
+              <div class='section-content margin-auto paxl mdl-color--white'>
+                <h2 class='section-header'>Tables</h2>
+                <p>
+                  This table has
+                  <code>.box-shadow-key-1</code>
+                  and
+                  <code>.grid-nogutter</code>
+                  on the grid rows. Examples of top and bottom cell alignment, row hovers, and colspans.
+                </p>
+                <div class='table box-shadow-key-1'>
+                  <div class='th grid'>
+                    <div class='td col col-2'>
+                      Header 1
+                    </div>
+                    <div class='td col col-2'>
+                      Header 2
+                    </div>
+                    <div class='td col col-4'>
+                      Header 3
+                    </div>
+                    <div class='td col col-8'>
+                      Header 4
+                    </div>
+                    <div class='td col col-8'>
+                      Header 5
+                    </div>
+                  </div>
+                  <div class='tr grid'>
+                    <div class='td col col-2'>
+                      <div>Cell 1</div>
+                      <div>Cell 1.2</div>
+                    </div>
+                    <div class='td col col-2'>
+                      <div>Cell 2</div>
+                      <div>Cell 2.1</div>
+                      <div>Cell 2.2</div>
+                    </div>
+                    <div class='td col col-4 col-top'>
+                      Cell 3 .col-top
+                    </div>
+                    <div class='td col col-8 col-bottom'>
+                      Cell 4 .col-bottom
+                    </div>
+                    <div class='td col col-8'>
+                      Cell 5
+                    </div>
+                  </div>
+                  <div class='tr grid'>
+                    <div class='td col col-2'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-2'>
+                      <div>Cell 2</div>
+                      <div>Cell 2.2</div>
+                    </div>
+                    <div class='td col col-4'>
+                      <div class='type-ellipsis'>
+                        Ellipsis-example-HotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlinebling
+                      </div>
+                    </div>
+                    <div class='td col'>
+                      Cell 4 + 5 (auto width)
+                    </div>
+                  </div>
+                </div>
+                <h4>Table Borders and Hovers</h4>
+                <p>
+                  This table has no box-shadow or hovers. The
+                  <code>.no-hover</code>
+                  class can be applied to the entire table or a specific row.
+                </p>
+                <div class='table no-hover'>
+                  <div class='th grid'>
+                    <div class='td col col-4'>
+                      Header 1
+                    </div>
+                    <div class='td col col-2'>
+                      Header 2
+                    </div>
+                    <div class='td col col-4'>
+                      Header 3
+                    </div>
+                    <div class='td col col-6'>
+                      Header 4
+                    </div>
+                    <div class='td col col-8'>
+                      Header 5
+                    </div>
+                  </div>
+                  <div class='tr grid'>
+                    <div class='td col col-4'>
+                      <code>table.no-hover</code>
+                    </div>
+                    <div class='td col col-2'>
+                      Cell 2
+                    </div>
+                    <div class='td col col-4'>
+                      Cell 3
+                    </div>
+                    <div class='td col col-6'>
+                      Cell 4
+                    </div>
+                    <div class='td col col-8'>
+                      Cell 5
+                    </div>
+                  </div>
+                </div>
+                <div class='table'>
+                  <div class='th grid'>
+                    <div class='td col col-4'>
+                      Header 1
+                    </div>
+                    <div class='td col col-2'>
+                      Header 2
+                    </div>
+                    <div class='td col col-4'>
+                      Header 3
+                    </div>
+                    <div class='td col col-6'>
+                      Header 4
+                    </div>
+                    <div class='td col col-8'>
+                      Header 5
+                    </div>
+                  </div>
+                  <div class='tr grid no-hover'>
+                    <div class='td col col-4'>
+                      <code>.tr.no-hover</code>
+                    </div>
+                    <div class='td col col-2'>
+                      Cell 2
+                    </div>
+                    <div class='td col col-4'>
+                      Cell 3
+                    </div>
+                    <div class='td col col-6'>
+                      Cell 4
+                    </div>
+                    <div class='td col col-8'>
+                      Cell 5
+                    </div>
+                  </div>
+                  <div class='tr grid'>
+                    <div class='td col col-4'>
+                      <code>.tr</code>
+                    </div>
+                    <div class='td col col-2'>
+                      Cell 2
+                    </div>
+                    <div class='td col col-4'>
+                      Cell 3
+                    </div>
+                    <div class='td col col-6'>
+                      Cell 4
+                    </div>
+                    <div class='td col col-8'>
+                      Cell 5
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  No side borders to cells using class
+                  <code>.tr-no-h-borders</code>
+                  on the
+                  <code>.tr</code>
+                  or
+                  <code>.table</code>
+                  or
+                  <code>.th</code>
+                </p>
+                <div class='table tr-no-h-borders'>
+                  <div class='th grid'>
+                    <div class='td col col-2'>
+                      Header 1
+                    </div>
+                    <div class='td col col-2'>
+                      Header 2
+                    </div>
+                    <div class='td col col-4'>
+                      Header 3
+                    </div>
+                    <div class='td col col-8'>
+                      Header 4
+                    </div>
+                    <div class='td col col-8'>
+                      Header 5
+                    </div>
+                  </div>
+                  <div class='tr grid'>
+                    <div class='td col col-2'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-2'>
+                      Cell 2
+                    </div>
+                    <div class='td col col-4'>
+                      Cell 3
+                    </div>
+                    <div class='td col col-8'>
+                      Cell 4
+                    </div>
+                    <div class='td col col-8'>
+                      Cell 5
+                    </div>
+                  </div>
+                  <div class='tr grid'>
+                    <div class='td col col-2'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-2'>
+                      Cell 2
+                    </div>
+                    <div class='td col col-4'>
+                      Cell 3
+                    </div>
+                    <div class='td col col-8'>
+                      Cell 4
+                    </div>
+                    <div class='td col col-8'>
+                      Cell 5
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  No external borders to cells using class
+                  <code>.tr-no-ext-borders</code>
+                  on the
+                  <code>.tr</code>
+                  or
+                  <code>.table</code>
+                  or
+                  <code>.th</code>
+                </p>
+                <div class='table tr-no-ext-borders'>
+                  <div class='th grid'>
+                    <div class='td col col-2'>
+                      Header 1
+                    </div>
+                    <div class='td col col-2'>
+                      Header 2
+                    </div>
+                    <div class='td col col-4'>
+                      Header 3
+                    </div>
+                    <div class='td col col-8'>
+                      Header 4
+                    </div>
+                    <div class='td col col-8'>
+                      Header 5
+                    </div>
+                  </div>
+                  <div class='tr grid tr-no-h-borders'>
+                    <div class='td col col-2'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-2'>
+                      Cell 2
+                    </div>
+                    <div class='td col col-4'>
+                      Cell 3
+                    </div>
+                    <div class='td col col-8'>
+                      Cell 4
+                    </div>
+                    <div class='td col col-8'>
+                      Cell 5
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  No borders on anything. Individual cell highlights. Add
+                  <code>.td-hover</code>
+                  to
+                  <code>.table</code>
+                </p>
+                <div class='table table-no-borders td-hover'>
+                  <div class='th grid'>
+                    <div class='td col col-2'>
+                      Header 1
+                    </div>
+                    <div class='td col col-2'>
+                      Header 2
+                    </div>
+                    <div class='td col col-4'>
+                      Header 3
+                    </div>
+                    <div class='td col col-8'>
+                      Header 4
+                    </div>
+                    <div class='td col col-8'>
+                      Header 5
+                    </div>
+                  </div>
+                  <div class='tr grid'>
+                    <div class='td col col-2'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-2'>
+                      Cell 2
+                    </div>
+                    <div class='td col col-4'>
+                      Cell 3
+                    </div>
+                    <div class='td col col-8'>
+                      Cell 4
+                    </div>
+                    <div class='td col col-8'>
+                      Cell 5
+                    </div>
+                  </div>
+                  <div class='tr grid'>
+                    <div class='td col col-2'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-2'>
+                      Cell 2
+                    </div>
+                    <div class='td col col-4'>
+                      Cell 3
+                    </div>
+                    <div class='td col col-8'>
+                      Cell 4
+                    </div>
+                    <div class='td col col-8'>
+                      Cell 5
+                    </div>
+                  </div>
+                </div>
+                <h4>Table Linking</h4>
+                <p>Row A tags and cell A tags. Apply the proper classes directly to the A tag.</p>
+                <div class='table'>
+                  <div class='th grid'>
+                    <div class='td col col-2'>
+                      Header 1
+                    </div>
+                    <div class='td col col-2'>
+                      Header 2
+                    </div>
+                    <div class='td col col-4'>
+                      Header 3
+                    </div>
+                    <div class='td col col-8'>
+                      Header 4
+                    </div>
+                    <div class='td col col-8'>
+                      Header 5
+                    </div>
+                  </div>
+                  <div class='tr grid'>
+                    <div class='td col col-2'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-2'>
+                      Cell 2
+                    </div>
+                    <div class='td col col-4'>
+                      Cell 3
+                    </div>
+                    <div class='td col col-8'>
+                      Cell 4
+                    </div>
+                    <a class='td col col-8' href='#tables' title='Everyone Can Read It'>
+                      Cell 5
+                    </a>
+                  </div>
+                  <a class='tr grid' href='#tables' title='Everyone Can Read It'>
+                    <div class='td col col-24'>
+                      Cell 24
+                    </div>
+                  </a>
+                </div>
+                <h4>Table Breaks</h4>
+                <p>
+                  Large Column breaks (750px) Collapse Rows add
+                  <code>.table-lg-row</code>
+                  to the
+                  <code>.table</code>
+                </p>
+                <div class='table table-lg-row'>
+                  <div class='tr grid'>
+                    <div class='td col col-lg col-2'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-lg col-2'>
+                      Cell 2
+                    </div>
+                    <div class='td col col-lg col-4'>
+                      Cell 3
+                    </div>
+                    <div class='td col col-lg col-8'>
+                      Cell 4
+                    </div>
+                    <div class='td col col-lg col-8'>
+                      Cell 5
+                    </div>
+                  </div>
+                  <div class='tr grid'>
+                    <div class='td col col-lg col-2'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-lg col-2'>
+                      Cell 2
+                    </div>
+                    <div class='td col col-lg col-4'>
+                      Cell 3
+                    </div>
+                    <div class='td col col-lg col-8'>
+                      Cell 4
+                    </div>
+                    <div class='td col col-lg col-8'>
+                      Cell 5
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Medium Column breaks (620px) Collapse Rows add
+                  <code>.table-md-row</code>
+                  to the
+                  <code>.table</code>
+                </p>
+                <div class='table table-md-row'>
+                  <div class='tr grid'>
+                    <div class='td col col-md col-2'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-md col-2'>
+                      Cell 2
+                    </div>
+                    <div class='td col col-md col-4'>
+                      Cell 3
+                    </div>
+                    <div class='td col col-md col-8'>
+                      Cell 4
+                    </div>
+                    <div class='td col col-md col-8'>
+                      Cell 5
+                    </div>
+                  </div>
+                  <div class='tr grid'>
+                    <div class='td col col-md col-2'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-md col-2'>
+                      Cell 2
+                    </div>
+                    <div class='td col col-md col-4'>
+                      Cell 3
+                    </div>
+                    <div class='td col col-md col-8'>
+                      Cell 4
+                    </div>
+                    <div class='td col col-md col-8'>
+                      Cell 5
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Small Column breaks (480px) Collapse Rows add
+                  <code>.table-sm-row</code>
+                  to the
+                  <code>.table</code>
+                </p>
+                <div class='table table-sm-row'>
+                  <div class='tr grid'>
+                    <div class='td col col-sm col-2'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-sm col-2'>
+                      Cell 2
+                    </div>
+                    <div class='td col col-sm col-4'>
+                      Cell 3
+                    </div>
+                    <div class='td col col-sm col-8'>
+                      Cell 4
+                    </div>
+                    <div class='td col col-sm col-8'>
+                      Cell 5
+                    </div>
+                  </div>
+                  <div class='tr grid'>
+                    <div class='td col col-sm col-2'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-sm col-2'>
+                      Cell 2
+                    </div>
+                    <div class='td col col-sm col-4'>
+                      Cell 3
+                    </div>
+                    <div class='td col col-sm col-8'>
+                      Cell 4
+                    </div>
+                    <div class='td col col-sm col-8'>
+                      Cell 5
+                    </div>
+                  </div>
+                </div>
+                <h4>Table Testing Ground</h4>
+                <p>
+                  Testing stuff
+                </p>
+                <div class='table'>
+                  <div class='th grid'>
+                    <div class='td col col-6'>
+                      Header 1
+                    </div>
+                    <div class='td col col-6'>
+                      Header 1
+                    </div>
+                    <div class='td col col-6'>
+                      Header 1
+                    </div>
+                    <div class='td col col-6'>
+                      Header 1
+                    </div>
+                  </div>
+                  <div class='tr grid'>
+                    <div class='td col col-6'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-6'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-6'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-6'>
+                      Cell 1
+                    </div>
+                  </div>
+                  <div class='tr grid'>
+                    <div class='td col col-6'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-6'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-6'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-6'>
+                      Cell 1
+                    </div>
+                  </div>
+                </div>
+                <div class='table'>
+                  <div class='tr grid'>
+                    <div class='td col col-6'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-6'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-6'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-6'>
+                      Cell 1
+                    </div>
+                  </div>
+                  <div class='tr grid'>
+                    <div class='td col col-6'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-6'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-6'>
+                      Cell 1
+                    </div>
+                    <div class='td col col-6'>
+                      Cell 1
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id='tooltips'>
+              <div class='section-content margin-auto paxl'>
+                <h2>Tooltips</h2>
+                <p>
+                  Default tooltip is dark and on top. Adding modifier classes will change the direction of the tooltip. For example
+                  <code>.tooltip-right</code>
+                  will change the direction of the tooltip.
+                </p>
+                <div class='section-format mbxl pbxl'>
+                  <div class='grid grid-around txt-c mbn'>
+                    <div class='col'>
+                      <a class='tooltip tooltip-right'>
+                        Tooltip Right
+                        <div class='tooltip-content'>
+                          <div class='tooltip-container'>
+                            Lorem
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class='col'>
+                      <a class='tooltip'>
+                        Tooltip Top
+                        <div class='tooltip-content'>
+                          <div class='tooltip-container'>
+                            Lorem
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class='col'>
+                      <a class='tooltip tooltip-bottom'>
+                        Tooltip Bottom
+                        <div class='tooltip-content'>
+                          <div class='tooltip-container'>
+                            Lorem
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class='col'>
+                      <a class='tooltip tooltip-left'>
+                        Tooltip Left
+                        <div class='tooltip-content'>
+                          <div class='tooltip-container'>
+                            Lorem
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <h4>Light Tooltips</h4>
+                <p>
+                  Add
+                  <code>.tooltip-light</code>
+                  to
+                  <code>.tooltip</code>
+                  to change the color scheme. This should be utilized for sentences that need to be read for more than a quick glance.
+                </p>
+                <div class='section-format mbxl pbxl'>
+                  <div class='grid grid-around txt-c mbn'>
+                    <div class='col'>
+                      <a class='tooltip tooltip-right tooltip-light'>
+                        Tooltip Right
+                        <div class='tooltip-content'>
+                          <div class='tooltip-container'>
+                            Lorem
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class='col'>
+                      <a class='tooltip tooltip-light'>
+                        Tooltip Top
+                        <div class='tooltip-content'>
+                          <div class='tooltip-container'>
+                            Lorem
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class='col'>
+                      <a class='tooltip tooltip-bottom tooltip-light'>
+                        Tooltip Bottom
+                        <div class='tooltip-content'>
+                          <div class='tooltip-container'>
+                            Lorem
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class='col'>
+                      <a class='tooltip tooltip-left tooltip-light'>
+                        Tooltip Left
+                        <div class='tooltip-content'>
+                          <div class='tooltip-container'>
+                            Lorem
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <h4>Tooltip Widths</h4>
+                <p>
+                  The default width of the tooltip is determined by the width of the original element and the text width. Utillize modifier classes to change the fixed width of the tooltip. For example
+                  <code>.tooltip-sm</code>
+                  sets the width to 104px,
+                  <code>.tooltip-md</code>
+                  sets the width to 136px,
+                  <code>.tooltip-lg</code>
+                  sets the width to 200px.
+                </p>
+                <div class='section-format mbxl pbxl'>
+                  <div class='grid grid-around txt-c mbn'>
+                    <div class='col'>
+                      <a class='tooltip tooltip-light tooltip-sm'>
+                        Tooltip Small
+                        <div class='tooltip-content'>
+                          <div class='tooltip-container'>
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class='col'>
+                      <a class='tooltip tooltip-light tooltip-md'>
+                        Tooltip Medium
+                        <div class='tooltip-content'>
+                          <div class='tooltip-container'>
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class='col'>
+                      <a class='tooltip tooltip-light tooltip-lg'>
+                        Tooltip Large
+                        <div class='tooltip-content'>
+                          <div class='tooltip-container'>
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <h4>Form Icon Tooltips</h4>
+                <p>
+                  Place the
+                  <code>.svgicon</code>
+                  into the
+                  <code>label</code>
+                  element next to the text and add
+                  <code>.svg-basline</code>
+                  to adjust the alignment.
+                </p>
+                <div class='section-format mbxl pbl'>
+                  <form>
+                    <div class='form-group form-inline'>
+                      <label>
+                        Snorglebits
+                        <a class='tooltip tooltip-light tooltip-md'>
+                          <div class='svgicon svg-baseline'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M22 34h4V22h-4v12zm2-30C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16zm-2-22h4v-4h-4v4z"/></svg>
+                          </div>
+                          <div class='tooltip-content'>
+                            <div class='tooltip-container'>
+                              Snorglebits are the most important part to the creation of every plumbus made.
+                            </div>
+                          </div>
+                        </a>
+                      </label>
+                      <input class='form-control' placeholder='Snorglebits' type='text'>
+                    </div>
+                    <div class='form-group form-inline'>
+                      <label>
+                        Plogglebits
+                        <a class='tooltip'>
+                          <div class='svgicon svg-baseline'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M22 34h4V22h-4v12zm2-30C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16zm-2-22h4v-4h-4v4z"/></svg>
+                          </div>
+                          <div class='tooltip-content'>
+                            <div class='tooltip-container'>
+                              Careful
+                            </div>
+                          </div>
+                        </a>
+                      </label>
+                      <input class='form-control' placeholder='Plogglebits' type='text'>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+            <section id='icons'>
+              <div class='section-content margin-auto paxl mdl-color--white'>
+                <h2 class='section-header'>Icons</h2>
+                <p>
+                  View
+                  <a href='http://pivotalicons.cfapps.io/' target='_blank'>
+                    Pivotal SVG Icon Library
+                  </a>
+                </p>
+                <div class='grid mvxl'>
+                  <div class='col sg-icon-tile'>
+                    <div class='svgicon'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M24,5,12,17l2.83,2.83L24,10.66l9.17,9.17L36,17Z"/><path d="M33.17,28.17,24,37.34l-9.17-9.17L12,31,24,43,36,31Z"/></svg>
+                    </div>
+                    <div class='sg-icon-label'>
+                      select_chevrons
+                    </div>
+                  </div>
+                  <div class='col sg-icon-tile'>
+                    <div class='svgicon'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M24 16L12 28l2.83 2.83L24 21.66l9.17 9.17L36 28z"/></svg>
+                    </div>
+                    <div class='sg-icon-label'>
+                      chevron_up
+                    </div>
+                  </div>
+                  <div class='col sg-icon-tile'>
+                    <div class='svgicon'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M33.17 17.17L24 26.34l-9.17-9.17L12 20l12 12 12-12z"/></svg>
+                    </div>
+                    <div class='sg-icon-label'>
+                      chevron_down
+                    </div>
+                  </div>
+                  <div class='col sg-icon-tile'>
+                    <div class='svgicon'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 38H10V10h14V6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V24h-4v14zM28 6v4h7.17L15.51 29.66l2.83 2.83L38 12.83V20h4V6H28z"/></svg>
+                    </div>
+                    <div class='sg-icon-label'>
+                      open_in_new
+                    </div>
+                  </div>
+                  <div class='col sg-icon-tile'>
+                    <div class='svgicon'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
+                    </div>
+                    <div class='sg-icon-label'>
+                      add
+                    </div>
+                  </div>
+                  <div class='col sg-icon-tile'>
+                    <div class='svgicon'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M22 34h4V22h-4v12zm2-30C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16zm-2-22h4v-4h-4v4z"/></svg>
+                    </div>
+                    <div class='sg-icon-label'>
+                      info_outline
+                    </div>
+                  </div>
+                  <div class='col sg-icon-tile'>
+                    <div class='svgicon'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M20 36h8v-4h-8v4zM6 12v4h36v-4H6zm6 14h24v-4H12v4z"/></svg>
+                    </div>
+                    <div class='sg-icon-label'>
+                      filter_list
+                    </div>
+                  </div>
+                  <div class='col sg-icon-tile'>
+                    <div class='svgicon'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"/></svg>
+                    </div>
+                    <div class='sg-icon-label'>
+                      close
+                    </div>
+                  </div>
+                  <div class='col sg-icon-tile'>
+                    <div class='svgicon'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M24 4C12.95 4 4 12.95 4 24c0 11.04 8.95 20 20 20 11.04 0 20-8.96 20-20 0-11.05-8.96-20-20-20zm-4 30L10 24l2.83-2.83L20 28.34l15.17-15.17L38 16 20 34z"/></svg>
+                    </div>
+                    <div class='sg-icon-label'>
+                      close
+                    </div>
+                  </div>
+                  <div class='col sg-icon-tile'>
+                    <div class='svgicon'>
+                      <img src='/images/check_circle.png'>
+                    </div>
+                    <div class='sg-icon-label'>
+                      check_circle.png
+                    </div>
+                  </div>
+                </div>
+                <h4>SVGs align to text</h4>
+                <p>
+                  Adding
+                  <code>.svg-baseline</code>
+                  to to the
+                  <code>.svgicon</code>
+                  class absolute positions the icon -0.2ems from the bottom allowing it to align to text properly
+                </p>
+                <div class='section-format mbxl'>
+                  <h2>
+                    My favorite icon is
+                    <div class='svgicon svg-baseline'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 38H10V10h14V6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V24h-4v14zM28 6v4h7.17L15.51 29.66l2.83 2.83L38 12.83V20h4V6H28z"/></svg>
+                    </div>
+                    and also
+                    <div class='svgicon svg-baseline'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M22 34h4V22h-4v12zm2-30C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16zm-2-22h4v-4h-4v4z"/></svg>
+                    </div>
+                    because it aligns to H2
+                  </h2>
+                  <h2 class='em-alt'>
+                    My favorite icon is
+                    <div class='svgicon svg-baseline'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 38H10V10h14V6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V24h-4v14zM28 6v4h7.17L15.51 29.66l2.83 2.83L38 12.83V20h4V6H28z"/></svg>
+                    </div>
+                    and also
+                    <div class='svgicon svg-baseline'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M22 34h4V22h-4v12zm2-30C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16zm-2-22h4v-4h-4v4z"/></svg>
+                    </div>
+                    because it aligns to H2
+                  </h2>
+                  <div style='font-size:18px;'>
+                    My favorite icon is
+                    <div class='svgicon svg-baseline'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 38H10V10h14V6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V24h-4v14zM28 6v4h7.17L15.51 29.66l2.83 2.83L38 12.83V20h4V6H28z"/></svg>
+                    </div>
+                    because it aligns to 18px and supports
+                    <div class='svgicon svg-baseline'>
+                      <img src='/images/check_circle.png'>
+                    </div>
+                    as a png
+                  </div>
+                  <div style='font-size:16px;'>
+                    My favorite icon is
+                    <div class='svgicon svg-baseline'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 38H10V10h14V6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V24h-4v14zM28 6v4h7.17L15.51 29.66l2.83 2.83L38 12.83V20h4V6H28z"/></svg>
+                    </div>
+                    because it aligns to 16px
+                  </div>
+                  <div style='font-size:14px;'>
+                    Just try to
+                    <div class='svgicon svg-baseline'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                    </div>
+                    it to a new
+                    <div class='svgicon svg-baseline'>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M24,33C13,33,4,30.8,4,28V21.8a1.05018,1.05018,0,0,1,.5-.9.90151.90151,0,0,1,.5-.1.74936.74936,0,0,1,.5.1C8.6,22.8,15.8,24,24,24s15.4-1.2,18.5-3.1a1.3,1.3,0,0,1,1,0,1.05019,1.05019,0,0,1,.5.9V28C44,30.8,35,33,24,33Z"/><path d="M24,44C13,44,4,41.8,4,39V32.8a1.05018,1.05018,0,0,1,.5-.9.90151.90151,0,0,1,.5-.1.74936.74936,0,0,1,.5.1C8.6,33.8,15.8,35,24,35s15.4-1.2,18.5-3.1a1.3,1.3,0,0,1,1,0,1.05019,1.05019,0,0,1,.5.9V39C44,41.8,35,44,24,44Z"/><path d="M24,22C13,22,4,19.8,4,17V9c0-2.8,9-5,20-5S44,6.2,44,9v8C44,19.8,35,22,24,22Z"/></svg>
+                    </div>
+                  </div>
+                  <div style='font-size:12px;'>
+                    My favorite icon is
+                    <div class='svgicon svg-baseline'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 38H10V10h14V6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V24h-4v14zM28 6v4h7.17L15.51 29.66l2.83 2.83L38 12.83V20h4V6H28z"/></svg>
+                    </div>
+                    and also
+                    <div class='svgicon svg-baseline'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M22 34h4V22h-4v12zm2-30C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16zm-2-22h4v-4h-4v4z"/></svg>
+                    </div>
+                    and also
+                    <div class='svgicon svg-baseline'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm10 27.17L31.17 34 24 26.83 16.83 34 14 31.17 21.17 24 14 16.83 16.83 14 24 21.17 31.17 14 34 16.83 26.83 24 34 31.17z"/></svg>
+                    </div>
+                    because it aligns to 12px
+                  </div>
+                  <div class='em-alt' style='font-size:12px;'>
+                    My favorite icon is
+                    <div class='svgicon svg-baseline'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 38H10V10h14V6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V24h-4v14zM28 6v4h7.17L15.51 29.66l2.83 2.83L38 12.83V20h4V6H28z"/></svg>
+                    </div>
+                    and also
+                    <div class='svgicon svg-baseline'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M22 34h4V22h-4v12zm2-30C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16zm-2-22h4v-4h-4v4z"/></svg>
+                    </div>
+                    and also
+                    <div class='svgicon svg-baseline'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm10 27.17L31.17 34 24 26.83 16.83 34 14 31.17 21.17 24 14 16.83 16.83 14 24 21.17 31.17 14 34 16.83 26.83 24 34 31.17z"/></svg>
+                    </div>
+                    because it aligns to 12px
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id='loading-spinners'>
+              <div class='section-content margin-auto paxl'>
+                <h2 class='section-header'>Spinners</h2>
+                <p>The spinner levels are determined by their size. The base spinner is 100px+ and therfore moves slower. The small spinner is under 16px and so it moves faster and more dramatic. These sizes are defined here to help you in the creation of custom components. Spinner size and speed are already written into buttons and inputs.</p>
+                <div class='section-format mbxl'>
+                  <div class='grid mvxl'>
+                    <div class='col txt-c'>
+                      <div class='mbxl'>
+                        <code>.spinner</code>
+                      </div>
+                      <div class='svgicon' style='font-size:100px;'>
+                        <svg class="spinner" width="100px" height="100px" viewBox="0 0 101 101" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="ring" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          <circle class="path" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          
+                        </svg>
+                      </div>
+                    </div>
+                    <div class='col txt-c'>
+                      <div class='mbxl'>
+                        <code>.spinner-md</code>
+                      </div>
+                      <div class='svgicon' style='font-size:50px;'>
+                        <svg class="spinner-md" width="100px" height="100px" viewBox="0 0 101 101" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="ring" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          <circle class="path" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          
+                        </svg>
+                      </div>
+                    </div>
+                    <div class='col txt-c'>
+                      <div class='mbxl'>
+                        <code>.spinner-sm</code>
+                      </div>
+                      <div class='svgicon' style='font-size:16px;'>
+                        <svg class="spinner-sm" width="100px" height="100px" viewBox="0 0 101 101" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="ring" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          <circle class="path" fill="none" stroke-width="10%" stroke-linecap="butt" cx="50%" cy="50%" r="45%"></circle>
+                          
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

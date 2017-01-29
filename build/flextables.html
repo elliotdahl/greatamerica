@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'>
+    <title>8 Gauge Styleguide</title>
+    <!-- /Monoton, Shrikhand, Lato -- Only for fun -->
+    <!-- /Source Sans Pro Font -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i' rel='stylesheet' type='text/css'>
+    <!-- /Raleway -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900' rel='stylesheet'>
+    <!-- /8pt Icon -->
+    <link href='/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'>
+    <link href='/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
+    <link href='/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
+    <link href="/stylesheets/8gauge.css" rel="stylesheet" />
+    <script src="/javascripts/all.js"></script>
+  </head>
+  <body class='flextables'>
+    <div class='page'>
+      <section class='pvxxl'>
+        <div class='section-content margin-auto txt-c'>
+          <h1>Flex Tables</h1>
+          <p class='sg type-lg'>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </section>
+      <section>
+        <div class='section-content margin-auto'>
+          <h2 class='mbxl txt-c'>The Foundation</h2>
+          <p class='sg type-lg mbxl txt-c'>
+            Basic css flex table with a
+            <code>.box-shadow-key-1</code>
+            to set it off from the background.
+          </p>
+          <div class='grid'>
+            <div class='col col-12'>
+              <div class='table box-shadow-key-1'>
+                <div class='th grid'>
+                  <div class='td col col-6'>
+                    Head
+                  </div>
+                  <div class='td col col-4'>
+                    Head
+                  </div>
+                  <div class='td col col-4'>
+                    Head
+                  </div>
+                  <div class='td col col-6'>
+                    Head
+                  </div>
+                  <div class='td col col-4'>
+                    Head
+                  </div>
+                </div>
+                <div class='tr grid'>
+                  <div class='td col col-6'>
+                    <div>Cell 1</div>
+                    <div>Cell 1.2</div>
+                  </div>
+                  <div class='td col col-4'>
+                    <div>Cell 2</div>
+                    <div>Cell 2.1</div>
+                    <div>Cell 2.2</div>
+                  </div>
+                  <div class='td col col-4 col-top'>
+                    Cell 3 .col-top
+                  </div>
+                  <div class='td col col-6 col-bottom'>
+                    Cell 4 .col-bottom
+                  </div>
+                  <div class='td col col-4'>
+                    Cell 5
+                  </div>
+                </div>
+                <div class='tr grid'>
+                  <div class='td col col-6'>
+                    Cell 1
+                  </div>
+                  <div class='td col col-4'>
+                    <div>Cell 2</div>
+                    <div>Cell 2.2</div>
+                  </div>
+                  <div class='td col col-4'>
+                    <div class='type-ellipsis'>
+                      Ellipsis-example-HotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlinebling
+                    </div>
+                  </div>
+                  <div class='td col'>
+                    Cell 4 + 5 (auto width)
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='col col-12'>
+              <table>
+                <tr>
+                  <th>Head</th>
+                  <th>Head</th>
+                  <th>Head</th>
+                  <th>Head</th>
+                  <th>Head</th>
+                  <th>Head</th>
+                </tr>
+                <tr>
+                  <td>
+                    Table Data
+                  </td>
+                  <td>
+                    Table Data
+                  </td>
+                  <td>
+                    Table Data
+                  </td>
+                  <td>
+                    Table Data
+                  </td>
+                  <td>
+                    Table Data
+                  </td>
+                  <td>
+                    Table Data
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <h4 class='txt-c'>Table Borders and Hovers</h4>
+          <p class='sg txt-c'>
+            This table has no box-shadow or hovers. The
+            <code>.no-hover</code>
+            class can be applied to the entire table or a specific row.
+          </p>
+          <div class='table no-hover'>
+            <div class='th grid'>
+              <div class='td col col-4'>
+                Header 1
+              </div>
+              <div class='td col col-2'>
+                Header 2
+              </div>
+              <div class='td col col-4'>
+                Header 3
+              </div>
+              <div class='td col col-6'>
+                Header 4
+              </div>
+              <div class='td col col-8'>
+                Header 5
+              </div>
+            </div>
+            <div class='tr grid'>
+              <div class='td col col-4'>
+                <code>table.no-hover</code>
+              </div>
+              <div class='td col col-2'>
+                Cell 2
+              </div>
+              <div class='td col col-4'>
+                Cell 3
+              </div>
+              <div class='td col col-6'>
+                Cell 4
+              </div>
+              <div class='td col col-8'>
+                Cell 5
+              </div>
+            </div>
+          </div>
+          <div class='table'>
+            <div class='th grid'>
+              <div class='td col col-4'>
+                Header 1
+              </div>
+              <div class='td col col-2'>
+                Header 2
+              </div>
+              <div class='td col col-4'>
+                Header 3
+              </div>
+              <div class='td col col-6'>
+                Header 4
+              </div>
+              <div class='td col col-8'>
+                Header 5
+              </div>
+            </div>
+            <div class='tr grid no-hover'>
+              <div class='td col col-4'>
+                <code>.tr.no-hover</code>
+              </div>
+              <div class='td col col-2'>
+                Cell 2
+              </div>
+              <div class='td col col-4'>
+                Cell 3
+              </div>
+              <div class='td col col-6'>
+                Cell 4
+              </div>
+              <div class='td col col-8'>
+                Cell 5
+              </div>
+            </div>
+            <div class='tr grid'>
+              <div class='td col col-4'>
+                <code>.tr</code>
+              </div>
+              <div class='td col col-2'>
+                Cell 2
+              </div>
+              <div class='td col col-4'>
+                Cell 3
+              </div>
+              <div class='td col col-6'>
+                Cell 4
+              </div>
+              <div class='td col col-8'>
+                Cell 5
+              </div>
+            </div>
+          </div>
+          <p class='sg txt-c'>
+            No side borders to cells using class
+            <code>.tr-no-h-borders</code>
+            on the
+            <code>.tr</code>
+            or
+            <code>.table</code>
+            or
+            <code>.th</code>
+          </p>
+          <div class='table tr-no-h-borders'>
+            <div class='th grid'>
+              <div class='td col col-2'>
+                Header 1
+              </div>
+              <div class='td col col-2'>
+                Header 2
+              </div>
+              <div class='td col col-4'>
+                Header 3
+              </div>
+              <div class='td col col-8'>
+                Header 4
+              </div>
+              <div class='td col col-8'>
+                Header 5
+              </div>
+            </div>
+            <div class='tr grid'>
+              <div class='td col col-2'>
+                Cell 1
+              </div>
+              <div class='td col col-2'>
+                Cell 2
+              </div>
+              <div class='td col col-4'>
+                Cell 3
+              </div>
+              <div class='td col col-8'>
+                Cell 4
+              </div>
+              <div class='td col col-8'>
+                Cell 5
+              </div>
+            </div>
+            <div class='tr grid'>
+              <div class='td col col-2'>
+                Cell 1
+              </div>
+              <div class='td col col-2'>
+                Cell 2
+              </div>
+              <div class='td col col-4'>
+                Cell 3
+              </div>
+              <div class='td col col-8'>
+                Cell 4
+              </div>
+              <div class='td col col-8'>
+                Cell 5
+              </div>
+            </div>
+          </div>
+          <p class='sg txt-c'>
+            No external borders to cells using class
+            <code>.tr-no-ext-borders</code>
+            on the
+            <code>.tr</code>
+            or
+            <code>.table</code>
+            or
+            <code>.th</code>
+          </p>
+          <div class='table tr-no-ext-borders'>
+            <div class='th grid'>
+              <div class='td col col-2'>
+                Header 1
+              </div>
+              <div class='td col col-2'>
+                Header 2
+              </div>
+              <div class='td col col-4'>
+                Header 3
+              </div>
+              <div class='td col col-8'>
+                Header 4
+              </div>
+              <div class='td col col-8'>
+                Header 5
+              </div>
+            </div>
+            <div class='tr grid tr-no-h-borders'>
+              <div class='td col col-2'>
+                Cell 1
+              </div>
+              <div class='td col col-2'>
+                Cell 2
+              </div>
+              <div class='td col col-4'>
+                Cell 3
+              </div>
+              <div class='td col col-8'>
+                Cell 4
+              </div>
+              <div class='td col col-8'>
+                Cell 5
+              </div>
+            </div>
+          </div>
+          <p class='sg txt-c'>
+            No borders on anything. Individual cell highlights. Add
+            <code>.td-hover</code>
+            to
+            <code>.table</code>
+          </p>
+          <div class='table table-no-borders td-hover'>
+            <div class='th grid'>
+              <div class='td col col-2'>
+                Header 1
+              </div>
+              <div class='td col col-2'>
+                Header 2
+              </div>
+              <div class='td col col-4'>
+                Header 3
+              </div>
+              <div class='td col col-8'>
+                Header 4
+              </div>
+              <div class='td col col-8'>
+                Header 5
+              </div>
+            </div>
+            <div class='tr grid'>
+              <div class='td col col-2'>
+                Cell 1
+              </div>
+              <div class='td col col-2'>
+                Cell 2
+              </div>
+              <div class='td col col-4'>
+                Cell 3
+              </div>
+              <div class='td col col-8'>
+                Cell 4
+              </div>
+              <div class='td col col-8'>
+                Cell 5
+              </div>
+            </div>
+            <div class='tr grid'>
+              <div class='td col col-2'>
+                Cell 1
+              </div>
+              <div class='td col col-2'>
+                Cell 2
+              </div>
+              <div class='td col col-4'>
+                Cell 3
+              </div>
+              <div class='td col col-8'>
+                Cell 4
+              </div>
+              <div class='td col col-8'>
+                Cell 5
+              </div>
+            </div>
+          </div>
+          <h4 class='txt-c'>Table Linking</h4>
+          <p class='sg txt-c'>Row A tags and cell A tags. Apply the proper classes directly to the A tag.</p>
+          <div class='table'>
+            <div class='th grid'>
+              <div class='td col col-2'>
+                Header 1
+              </div>
+              <div class='td col col-2'>
+                Header 2
+              </div>
+              <div class='td col col-4'>
+                Header 3
+              </div>
+              <div class='td col col-8'>
+                Header 4
+              </div>
+              <div class='td col col-8'>
+                Header 5
+              </div>
+            </div>
+            <div class='tr grid'>
+              <div class='td col col-2'>
+                Cell 1
+              </div>
+              <div class='td col col-2'>
+                Cell 2
+              </div>
+              <div class='td col col-4'>
+                Cell 3
+              </div>
+              <div class='td col col-8'>
+                Cell 4
+              </div>
+              <a class='td col col-8' href='#tables' title='Everyone Can Read It'>
+                Cell 5
+              </a>
+            </div>
+            <a class='tr grid' href='#tables' title='Everyone Can Read It'>
+              <div class='td col col-24'>
+                Cell 24
+              </div>
+            </a>
+          </div>
+          <h4 class='txt-c'>Table Breaks</h4>
+          <p class='sg txt-c'>
+            Large Column breaks (750px) Collapse Rows add
+            <code>.table-lg-row</code>
+            to the
+            <code>.table</code>
+          </p>
+          <div class='table table-lg-row'>
+            <div class='tr grid'>
+              <div class='td col col-lg col-2'>
+                Cell 1
+              </div>
+              <div class='td col col-lg col-2'>
+                Cell 2
+              </div>
+              <div class='td col col-lg col-4'>
+                Cell 3
+              </div>
+              <div class='td col col-lg col-8'>
+                Cell 4
+              </div>
+              <div class='td col col-lg col-8'>
+                Cell 5
+              </div>
+            </div>
+            <div class='tr grid'>
+              <div class='td col col-lg col-2'>
+                Cell 1
+              </div>
+              <div class='td col col-lg col-2'>
+                Cell 2
+              </div>
+              <div class='td col col-lg col-4'>
+                Cell 3
+              </div>
+              <div class='td col col-lg col-8'>
+                Cell 4
+              </div>
+              <div class='td col col-lg col-8'>
+                Cell 5
+              </div>
+            </div>
+          </div>
+          <p class='sg txt-c'>
+            Medium Column breaks (620px) Collapse Rows add
+            <code>.table-md-row</code>
+            to the
+            <code>.table</code>
+          </p>
+          <div class='table table-md-row'>
+            <div class='tr grid'>
+              <div class='td col col-md col-2'>
+                Cell 1
+              </div>
+              <div class='td col col-md col-2'>
+                Cell 2
+              </div>
+              <div class='td col col-md col-4'>
+                Cell 3
+              </div>
+              <div class='td col col-md col-8'>
+                Cell 4
+              </div>
+              <div class='td col col-md col-8'>
+                Cell 5
+              </div>
+            </div>
+            <div class='tr grid'>
+              <div class='td col col-md col-2'>
+                Cell 1
+              </div>
+              <div class='td col col-md col-2'>
+                Cell 2
+              </div>
+              <div class='td col col-md col-4'>
+                Cell 3
+              </div>
+              <div class='td col col-md col-8'>
+                Cell 4
+              </div>
+              <div class='td col col-md col-8'>
+                Cell 5
+              </div>
+            </div>
+          </div>
+          <p class='sg txt-c'>
+            Small Column breaks (480px) Collapse Rows add
+            <code>.table-sm-row</code>
+            to the
+            <code>.table</code>
+          </p>
+          <div class='table table-sm-row'>
+            <div class='tr grid'>
+              <div class='td col col-sm col-2'>
+                Cell 1
+              </div>
+              <div class='td col col-sm col-2'>
+                Cell 2
+              </div>
+              <div class='td col col-sm col-4'>
+                Cell 3
+              </div>
+              <div class='td col col-sm col-8'>
+                Cell 4
+              </div>
+              <div class='td col col-sm col-8'>
+                Cell 5
+              </div>
+            </div>
+            <div class='tr grid'>
+              <div class='td col col-sm col-2'>
+                Cell 1
+              </div>
+              <div class='td col col-sm col-2'>
+                Cell 2
+              </div>
+              <div class='td col col-sm col-4'>
+                Cell 3
+              </div>
+              <div class='td col col-sm col-8'>
+                Cell 4
+              </div>
+              <div class='td col col-sm col-8'>
+                Cell 5
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
