@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  $("#scrolldown").click(function() {
+    console.log("scroll");
+    $('html, body').animate({
+    scrollTop: ($('#page2').offset().top)
+    },500);
+  });
+
 
 
     console.log("american");
@@ -60,7 +67,7 @@ $(document).ready(function() {
             }, 11000);
         setTimeout(
             function() {
-                $("#american").text("Hispanic");
+                $("#american").text("Human");
             }, 12000);
         setTimeout(
             function() {

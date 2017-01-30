@@ -40,7 +40,7 @@ $(document).ready(function() {
             }, 6000);
         setTimeout(
             function() {
-                $("#american").text("Homosexual");
+                $("#american").text("Gay");
             }, 7000);
         setTimeout(
             function() {
@@ -60,7 +60,7 @@ $(document).ready(function() {
             }, 11000);
         setTimeout(
             function() {
-                $("#american").text("A Minority");
+                $("#american").text("Hispanic");
             }, 12000);
         setTimeout(
             function() {

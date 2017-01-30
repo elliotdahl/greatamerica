@@ -2,44 +2,50 @@
 title: I am American
 ---
 
-.page#page2
+.page#page1
 	.full-vh.vert-middle
-		.grid
-			.col
-				.person
-					=partial 'images/person-hold.svg'
-			.col
-				.person
-					=partial 'images/person-hold.svg'
-			.col
-				.person
-					=partial 'images/person-hold.svg'
-			.col
-				.person
-					=partial 'images/person-hold.svg'
+		.people
+			=partial 'images/people-06.svg'
+		-# .grid
+		-# 	.col
+		-# 		.person
+		-# 			=partial 'images/person-hold.svg'
+		-# 	.col
+		-# 		.person
+		-# 			=partial 'images/person-hold.svg'
+		-# 	.col
+		-# 		.person
+		-# 			=partial 'images/person-hold.svg'
+		-# 	.col
+		-# 		.person
+		-# 			=partial 'images/person-hold.svg'
 		%div.txt-c.mvxxxl
 			%h1
 				I am
 			%h1
 				%span.title.type-underline#american An Immigrant
-		.grid
-			.col
-				.person
-					=partial 'images/person-hold.svg'
-			.col
-				.person
-					=partial 'images/person-hold.svg'
-			.col
-				.person
-					=partial 'images/person-hold.svg'
-			.col
-				.person
-					=partial 'images/person-hold.svg'
+		-# .grid
+		-# 	.col
+		-# 		.person
+		-# 			=partial 'images/person-hold.svg'
+		-# 	.col
+		-# 		.person
+		-# 			=partial 'images/person-hold.svg'
+		-# 	.col
+		-# 		.person
+		-# 			=partial 'images/person-hold.svg'
+		-# 	.col
+		-# 		.person
+		-# 			=partial 'images/person-hold.svg'
+		%div.txt-c
+			#scrolldown
+				.svgicon
+					=partial 'images/svg-lib/chevron_down.svg'
 .page#page2
 	.full-vh.vert-middle
 
 		.container.txt-c
 			%h2.mbxxxl Don’t forget what makes America truly great.
-			%p.mbxxl The unique strength of America comes from our diversity. We are a nation founded on freedom. Support the ACLU in protecting our freedoms.
+			%p.mbxxl The message is a small representation of the beautiful diversity within America. The unique strength of our nation comes from our diversity. We are a nation founded on freedom. Support the ACLU in protecting our freedoms.
 			%a.button.btn-highlight.btn-lg{:href => "https://www.aclu.org", :target =>"_blank"}
 				Donate
