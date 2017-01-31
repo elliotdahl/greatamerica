@@ -3371,4 +3371,7 @@ h2 {
     font-size: 40px; }
 
   .people svg {
+    max-height: 260px; }
+
+  .people-wrapper {
     max-height: 260px; } }
