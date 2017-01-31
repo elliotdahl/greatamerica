@@ -4,39 +4,22 @@ title: I am American
 //force pushing
 .page#page1
 	.full-vh.vert-middle
-		.people
-			=partial 'images/people-06.svg'
-		-# .grid
-		-# 	.col
-		-# 		.person
-		-# 			=partial 'images/person-hold.svg'
-		-# 	.col
-		-# 		.person
-		-# 			=partial 'images/person-hold.svg'
-		-# 	.col
-		-# 		.person
-		-# 			=partial 'images/person-hold.svg'
-		-# 	.col
-		-# 		.person
-		-# 			=partial 'images/person-hold.svg'
+		.people-wrapper
+			#person1.people
+				=partial 'images/people-1.svg'
+			#person2.people
+				=partial 'images/people-2.svg'
+			#person3.people
+				=partial 'images/people-3.svg'
+			#person4.people
+				=partial 'images/people-4.svg'
+
 		%div.txt-c.mvxxxl
 			%h1
 				I am
 			%h1
 				%span.title.type-underline#american An Immigrant
-		-# .grid
-		-# 	.col
-		-# 		.person
-		-# 			=partial 'images/person-hold.svg'
-		-# 	.col
-		-# 		.person
-		-# 			=partial 'images/person-hold.svg'
-		-# 	.col
-		-# 		.person
-		-# 			=partial 'images/person-hold.svg'
-		-# 	.col
-		-# 		.person
-		-# 			=partial 'images/person-hold.svg'
+
 		%div.txt-c
 			#scrolldown
 				.svgicon
