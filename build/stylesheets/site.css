@@ -3238,7 +3238,8 @@ p {
 .page {
   width: 100%;
   padding: 0 16px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 h1, h2 {
   font-family: 'Cutive Mono', monospace; }
