@@ -1,6 +1,5 @@
 $(document).ready(function() {
   $("#scrolldown").click(function() {
-    console.log("scroll");
     $('html, body').animate({
     scrollTop: ($('#page2').offset().top)
     },500);
@@ -18,7 +17,6 @@ $(document).ready(function() {
 
 
     function steps() {
-        console.log("step0");
         $("#american").removeClass("red").text("Jewish");
 
         setTimeout(
@@ -88,7 +86,6 @@ $(document).ready(function() {
 
 
     function peoples() {
-        console.log("people-mover");;
         $("#person1").addClass("people-move");
 
         setTimeout(
