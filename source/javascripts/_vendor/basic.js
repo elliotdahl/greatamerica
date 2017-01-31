@@ -111,13 +111,18 @@ $(document).ready(function() {
                 $("#person4").removeClass("people-move");
                 $("#person5").addClass("people-move");
             }, 16000);
+        setTimeout(
+            function() {
+                $("#person5").removeClass("people-move");
+                $("#person6").addClass("people-move");
+            }, 20000);
 
 
 
     }
 
     peoples();
-    var peoples = setInterval(peoples, 16000);
+    var peoples = setInterval(peoples, 20000);
 
 
 

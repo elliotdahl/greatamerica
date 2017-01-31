@@ -87,6 +87,40 @@ $(document).ready(function() {
 
 
 
+    function peoples() {
+        console.log("people-mover");;
+        $("#person1").addClass("people-move");
+
+        setTimeout(
+            function() {
+                $("#person1").removeClass("people-move");
+                $("#person2").addClass("people-move");
+            }, 4000);
+        setTimeout(
+            function() {
+                $("#person2").removeClass("people-move");
+                $("#person3").addClass("people-move");
+            }, 8000);
+        setTimeout(
+            function() {
+                $("#person3").removeClass("people-move");
+                $("#person4").addClass("people-move");
+            }, 12000);
+        setTimeout(
+            function() {
+                $("#person4").removeClass("people-move");
+                $("#person5").addClass("people-move");
+            }, 16000);
+
+
+
+    }
+
+    peoples();
+    var peoples = setInterval(peoples, 16000);
+
+
+
 
 
     //$(document.body).append(message);
