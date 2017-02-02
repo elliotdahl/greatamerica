@@ -113,6 +113,16 @@ $(document).ready(function() {
                 $("#person5").removeClass("people-move");
                 $("#person6").addClass("people-move");
             }, 20000);
+        setTimeout(
+            function() {
+                $("#person6").removeClass("people-move");
+                $("#person7").addClass("people-move");
+            }, 24000);
+        setTimeout(
+            function() {
+                $("#person7").removeClass("people-move");
+                $("#person8").addClass("people-move");
+            }, 28000);
 
 
 
@@ -120,7 +130,7 @@ $(document).ready(function() {
     }
 
     peoples();
-    var peoples = setInterval(peoples, 20000);
+    var peoples = setInterval(peoples, 28000);
 
 
 
