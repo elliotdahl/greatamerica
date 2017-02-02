@@ -50,7 +50,12 @@ h2 {
 .red {
   color:$red;
 }
-
+.attribute {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom:16px;
+}
 .person {
   //background-color:#f1f1f1;
   text-align: center;
